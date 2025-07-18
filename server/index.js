@@ -35,11 +35,11 @@ const logRoutes = (req, res, next) => {
   app.use(parseJSON);   
   
 
-  app.get('/api/fellows', serveFellows);
-  app.get('/api/fellows/:id', serveFellow);
-  app.post('/api/fellows', createFellow);
-  app.patch('/api/fellows/:id', updateFellow);
-  app.delete('/api/fellows/:id', deleteFellow);
+  app.get('/api/cars', serveCar);
+  app.get('/api/cars/:id', serveCar);
+  app.post('/api/cars', createCar);
+  app.patch('/api/cars/:id', updateCar);
+  app.delete('/api/cars/:id', deleteCar);
   
 
   const port = 8080;

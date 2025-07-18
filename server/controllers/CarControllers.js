@@ -1,6 +1,4 @@
-const Car = require('../model/Cars');
-
-
+const Car = require('../models/Cars');
 
 // Get All (Read)
 const serveCars = (req, res) => {
@@ -28,7 +26,7 @@ const createCar = (req, res) => {
     return res.status(400).send({ message: "Invalid Name" });
   }
 
-  const newCar = Car.create(CarName);
+  const newCar = Car.create(carName);
   res.send(newCar);
 };
 
